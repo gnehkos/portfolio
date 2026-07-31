@@ -4,32 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heng Sok - Portfolio</title>
-  
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ==================== CURSOR & BACKGROUND ORBS ==================== -->
   <div class="cur" id="cur"></div>
   <div class="cur-r" id="ring"></div>
   <div class="orb" id="orb"></div>
   <div class="orb2" id="orb2"></div>
   <div class="prog" id="prog"></div>
 
-  <!-- ==================== NAVIGATION BAR ==================== -->
 <nav id="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">Heng Sok</a>
     <ul class="nav-links">
-      <li><a href="#about" class="active">About</a></li>
-      <li><a href="hci.html">HCI Portfolio ✨</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#life">Life</a></li>
+      <li><a href="hci.html" style="color:var(--blue)">HCI Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-badge"><span class="nav-dot"></span>Open for Internship</div>
@@ -38,7 +32,7 @@
 
   <div class="wrap">
 
-    <!-- ==================== HERO SECTION ==================== -->
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-grid">
         <div>
@@ -49,14 +43,12 @@
             <span class="w"><span class="it">Heng</span></span>
             <span class="w"><span>Sok.</span></span>
           </h1>
-          <p class="hero-desc">Computer Science student based in Phnom Penh. Passionate about building robust backend architectures, UX/UI interaction design, solving complex logic, and expanding my technical skillset.</p>
+          <p class="hero-desc">Computer Science student based in Phnom Penh. Passionate about building robust backend architectures with Laravel and Spring Boot, solving complex logic, and crafting seamless user experiences.</p>
           <div class="hero-btns">
-            <a href="hci.html" class="btn btn-fill">View HCI Course Portfolio <svg class="ic" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <a href="#projects" class="btn btn-fill">View my work <svg class="ic" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             <a href="#contact" class="btn btn-ghost">Get in touch</a>
           </div>
         </div>
-        
-        <!-- Hero Profile Photo Slot -->
         <div class="hero-photo">
           <img src="images/profile.jpg" alt="Heng Sok" class="photo-fit">
         </div>
@@ -66,23 +58,29 @@
 
     <div class="spacer"></div><div class="glow-divider"></div><div class="spacer"></div>
 
-    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <!-- ABOUT -->
     <section id="about">
       <div class="s-head reveal"><h2>About</h2><span class="n">01</span></div>
       <div class="about-cols">
         <div class="about-text reveal">
-          <p>My name is <strong>Heng Sok</strong>. I am currently pursuing my Computer Science degree at Paragon International University in Phnom Penh.</p>
-          <p>My core focus lies in software engineering, UX/UI interaction design, and backend development—designing clean database structures, optimizing APIs, and crafting seamless user experiences.</p>
+          <p>My name is <strong>Heng Sok</strong>. I am currently pursuing my Computer Science degree at <strong>Paragon International University</strong> in Phnom Penh.</p>
+          <p>My core focus lies in backend development and software engineering, designing clean database structures, optimizing APIs, and building systems that actually work. I'm actively looking for a summer 2026 internship to grow alongside real engineers.</p>
         </div>
-        
-        <!-- Skills List -->
         <div class="reveal reveal-d1">
           <div class="s-head" style="margin-bottom:20px;"><h3>Tech Stack & Tools</h3></div>
           <div class="skills-float">
-            <span class="s-pill">Figma (UX/UI)</span><span class="s-pill">Wireframing</span><span class="s-pill">Prototyping</span>
-            <span class="s-pill">PHP</span><span class="s-pill">Laravel</span><span class="s-pill">Java</span>
-            <span class="s-pill">Spring Boot</span><span class="s-pill">MySQL</span><span class="s-pill">JavaScript</span>
-            <span class="s-pill">HTML / CSS</span><span class="s-pill">Git</span><span class="s-pill">REST APIs</span>
+            <span class="s-pill">PHP</span>
+            <span class="s-pill">Laravel</span>
+            <span class="s-pill">Java</span>
+            <span class="s-pill">Spring Boot</span>
+            <span class="s-pill">MySQL</span>
+            <span class="s-pill">JavaScript</span>
+            <span class="s-pill">HTML / CSS</span>
+            <span class="s-pill">Git</span>
+            <span class="s-pill">Figma</span>
+            <span class="s-pill">REST APIs</span>
+            <span class="s-pill">Linux</span>
+            <span class="s-pill">Database Design</span>
           </div>
         </div>
       </div>
@@ -90,34 +88,34 @@
 
     <div class="spacer"></div><div class="glow-divider"></div><div class="spacer"></div>
 
-    <!-- ==================== EDUCATION SECTION ==================== -->
+    <!-- EDUCATION -->
     <section id="education">
       <div class="s-head reveal"><h2>Education</h2><span class="n">02</span></div>
       <div class="edu-grid reveal">
 
         <div class="edu-card">
-          <span class="edu-badge">2024 - 2028</span>
+          <span class="edu-badge">2024 &mdash; 2028</span>
           <h3>Paragon International University</h3>
-          <p>Bachelor of Science in Computer Science. Focused on Human-Computer Interaction, algorithms, software architecture, and system design.</p>
+          <p>Bachelor of Science in Computer Science. Focused on software architecture, algorithms, human-computer interaction, and system design.</p>
         </div>
 
         <div class="edu-card">
           <span class="edu-badge">High School</span>
           <h3>Beltei International School</h3>
-          <p>Completed general high school education with strong emphasis on mathematics and logical sciences.</p>
-          <div class="edu-score">BacII Grade: B</div>
+          <p>Completed high school education with strong emphasis on mathematics and logical sciences.</p>
+          <div class="edu-score">Bacc II Result: B</div>
         </div>
 
         <div class="edu-card">
           <span class="edu-badge">English Language</span>
           <h3>Australian Centre for Education (ACE)</h3>
-          <p>Graduated from General English Program & Advanced Academic English tracks.</p>
+          <p>Graduated from General English and Advanced Academic English programs.</p>
           <div class="edu-score">IELTS Academic: 6.0</div>
         </div>
 
         <div class="edu-card">
           <span class="edu-badge">Chinese Language</span>
-          <h3>Chinese Language Proficiency</h3>
+          <h3>Mandarin Proficiency</h3>
           <p>Mandarin language studies covering conversational, written, and comprehension skills.</p>
           <div class="edu-score">HSK Level: 4</div>
         </div>
@@ -127,18 +125,17 @@
 
     <div class="spacer"></div><div class="glow-divider"></div><div class="spacer"></div>
 
-    <!-- ==================== PROJECTS & ACCOMPLISHMENTS SECTION ==================== -->
+    <!-- PROJECTS -->
     <section id="projects">
-      <div class="s-head reveal"><h2>Projects & Accomplishments</h2><span class="n">03</span></div>
+      <div class="s-head reveal"><h2>Projects</h2><span class="n">03</span></div>
 
-      <!-- Featured Competition Highlight Banner -->
+      <!-- MIS Challenge -->
       <div class="mis-card reveal">
-        <span class="mis-tag">🏆 1st Place Champion</span>
-        <h3 style="font-family:var(--display);font-size:2rem;margin-bottom:12px;">MIS Challenge Event</h3>
-        <p style="color:rgba(255,255,255,0.7);max-width:650px;line-height:1.8;font-size:0.95rem;">
-          Secured 1st Place in the competitive MIS Challenge! Our team designed and built a full-stack system solving key operational bottlenecks under tight deadlines.
+        <span class="mis-tag">&#127942; 1st Place Champion</span>
+        <h3 style="font-size:2rem;margin-bottom:12px;font-family:var(--display);">MIS Challenge 2026</h3>
+        <p style="max-width:650px;line-height:1.85;font-size:0.95rem;color:rgba(255,255,255,0.65);">
+          Secured 1st Place at the MIS Challenge event. Our team designed and built a full-stack bus booking system called <strong style="color:#fff">BookLan</strong>, solving key transportation and booking bottlenecks under tight deadlines. We built the entire UX/UI prototype in Figma and presented to a panel of industry judges.
         </p>
-
         <div class="mis-links">
           <a href="#" class="mis-link-btn">
             <svg class="ic" viewBox="0 0 24 24"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
@@ -146,58 +143,116 @@
           </a>
           <a href="#" class="mis-link-btn">
             <svg class="ic" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            Presentation Slide
+            Presentation Slides
           </a>
         </div>
-
         <div class="mis-grid">
-          <div class="mis-team-img">
-            <img src="images/profile.jpg" alt="MIS Team Winner" class="photo-fit">
+          <div class="mis-team-img" data-tilt>
+            <div class="mis-placeholder">
+              <svg class="ic" style="width:32px;height:32px;color:rgba(255,255,255,0.2)" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Team photo
+            </div>
           </div>
-          <div class="mis-app-img">
-            <img src="images/profile.jpg" alt="MIS App Snapshot" class="photo-fit">
+          <div class="mis-app-img" data-tilt>
+            <div class="mis-placeholder">
+              <svg class="ic" style="width:32px;height:32px;color:rgba(255,255,255,0.2)" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              App snapshot
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Project 1 -->
+      <!-- Restaurant App -->
       <div class="proj reveal">
         <div class="proj-media" data-tilt>
           <img src="images/profile.jpg" alt="Restaurant Discovery App" class="photo-fit">
         </div>
         <div class="proj-info">
-          <div class="proj-info-main"><h3>Restaurant Discovery App</h3><p>Full-stack Laravel app. Features image uploads, star ratings, review moderation, user roles, and full admin dashboard controls.</p></div>
+          <div class="proj-info-main">
+            <h3>Restaurant Discovery App</h3>
+            <p>Full-stack Laravel app for finding restaurants in Phnom Penh. Image uploads, star ratings, review moderation, user roles, and a full admin dashboard with CRUD and authentication.</p>
+          </div>
           <div class="proj-meta">
-            <div><div class="proj-meta-label">Stack</div><div class="proj-meta-tags"><span class="proj-meta-tag">Laravel</span><span class="proj-meta-tag">PHP</span><span class="proj-meta-tag">MySQL</span></div></div>
-            <div><div class="proj-meta-label">Links</div><div class="proj-links"><a href="#">GitHub <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a><a href="#">Live Demo <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div></div>
+            <div>
+              <div class="proj-meta-label">Stack</div>
+              <div class="proj-meta-tags">
+                <span class="proj-meta-tag">Laravel</span>
+                <span class="proj-meta-tag">PHP</span>
+                <span class="proj-meta-tag">MySQL</span>
+                <span class="proj-meta-tag">Blade</span>
+              </div>
+            </div>
+            <div>
+              <div class="proj-meta-label">Links</div>
+              <div class="proj-links">
+                <a href="#">GitHub <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <a href="#">Live <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Parking System -->
       <div class="proj reveal">
         <div class="proj-media" data-tilt>
           <img src="images/profile.jpg" alt="Parking Management System" class="photo-fit">
         </div>
         <div class="proj-info">
-          <div class="proj-info-main"><h3>Parking Management System</h3><p>Database-driven parking control application integrated with Cambodian license plate validation logic and UI components.</p></div>
+          <div class="proj-info-main">
+            <h3>Parking Management System</h3>
+            <p>Database-driven parking control system with Cambodian vehicle plate validation via custom regex patterns. Includes a full Figma prototype with localized Khmer UI.</p>
+          </div>
           <div class="proj-meta">
-            <div><div class="proj-meta-label">Stack</div><div class="proj-meta-tags"><span class="proj-meta-tag">MySQL</span><span class="proj-meta-tag">Figma</span><span class="proj-meta-tag">Regex</span></div></div>
-            <div><div class="proj-meta-label">Links</div><div class="proj-links"><a href="#">GitHub <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a><a href="#">Figma <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div></div>
+            <div>
+              <div class="proj-meta-label">Stack</div>
+              <div class="proj-meta-tags">
+                <span class="proj-meta-tag">MySQL</span>
+                <span class="proj-meta-tag">Figma</span>
+                <span class="proj-meta-tag">Regex</span>
+                <span class="proj-meta-tag">DB Design</span>
+              </div>
+            </div>
+            <div>
+              <div class="proj-meta-label">Links</div>
+              <div class="proj-links">
+                <a href="#">GitHub <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <a href="#">Figma <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
+      <!-- Album Zipper -->
       <div class="proj reveal">
         <div class="proj-media" data-tilt>
-          <img src="images/profile.jpg" alt="Album Zipper Tool" class="photo-fit">
+          <div class="proj-media-placeholder">
+            <svg class="ic vis-ic" style="width:44px;height:44px;color:var(--dim)" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Tool screenshot
+          </div>
         </div>
         <div class="proj-info">
-          <div class="proj-info-main"><h3>Album Zipper</h3><p>Lightweight client-side browser utility for batch-zipping photos while preserving detailed EXIF image metadata.</p></div>
+          <div class="proj-info-main">
+            <h3>Album Zipper</h3>
+            <p>Browser-based tool for batch-downloading and zipping event photos with EXIF data preservation. No backend needed. Works across iOS, Android, and desktop.</p>
+          </div>
           <div class="proj-meta">
-            <div><div class="proj-meta-label">Stack</div><div class="proj-meta-tags"><span class="proj-meta-tag">JavaScript</span><span class="proj-meta-tag">JSZip</span></div></div>
-            <div><div class="proj-meta-label">Links</div><div class="proj-links"><a href="#">GitHub <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a><a href="#">Live <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div></div>
+            <div>
+              <div class="proj-meta-label">Stack</div>
+              <div class="proj-meta-tags">
+                <span class="proj-meta-tag">JavaScript</span>
+                <span class="proj-meta-tag">JSZip</span>
+                <span class="proj-meta-tag">GitHub Pages</span>
+              </div>
+            </div>
+            <div>
+              <div class="proj-meta-label">Links</div>
+              <div class="proj-links">
+                <a href="#">GitHub <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                <a href="#">Live <svg class="ic" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -206,91 +261,91 @@
 
     <div class="spacer"></div><div class="glow-divider"></div><div class="spacer"></div>
 
-    <!-- ==================== LIFE & ACTIVITIES SECTION ==================== -->
+    <!-- LIFE -->
     <section id="life">
       <div class="s-head reveal"><h2>Life & Activities</h2><span class="n">04</span></div>
 
       <div class="life-block reveal">
         <div class="life-header">
           <h3>Cycling</h3>
-          <p>Exploring long routes around Phnom Penh and beyond. Great way to clear my mind, build endurance, and recharge outside of programming.</p>
+          <p>Exploring long routes around Phnom Penh and beyond. A great way to clear my mind, build endurance, and recharge outside of programming. I try to get out for a long ride at least once a week.</p>
         </div>
         <div class="life-gallery">
-          <div class="life-img"><img src="images/profile.jpg" alt="Cycling" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Cycling" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Cycling" class="photo-fit"></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 1</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 2</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 3</div></div>
         </div>
       </div>
 
       <div class="life-block reveal">
         <div class="life-header">
           <h3>Brazilian Jiu-Jitsu (BJJ)</h3>
-          <p>Training grappling techniques and sparring. BJJ teaches problem-solving under pressure, leverage, and discipline—very similar to debugging code.</p>
+          <p>Training grappling techniques and sparring regularly. BJJ teaches problem-solving under pressure, leverage, and discipline, which translates directly into how I approach debugging and system design.</p>
         </div>
         <div class="life-gallery">
-          <div class="life-img"><img src="images/profile.jpg" alt="BJJ" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="BJJ" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="BJJ" class="photo-fit"></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 1</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 2</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 3</div></div>
         </div>
       </div>
 
       <div class="life-block reveal">
         <div class="life-header">
           <h3>Badminton</h3>
-          <p>Playing competitive friendly matches focused on agility, quick reflexes, and strategy on court.</p>
+          <p>Competitive matches with friends and teammates. Fast-paced and strategic, it keeps my reflexes sharp and my competitive spirit alive. Usually play a few times a week between classes.</p>
         </div>
         <div class="life-gallery">
-          <div class="life-img"><img src="images/profile.jpg" alt="Badminton" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Badminton" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Badminton" class="photo-fit"></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 1</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 2</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 3</div></div>
         </div>
       </div>
 
       <div class="life-block reveal">
         <div class="life-header">
           <h3>Ping Pong</h3>
-          <p>Fast-paced table tennis games during university breaks and free sessions with friends.</p>
+          <p>Quick games between classes or during breaks. It's a great mental reset and one of the most social sports around campus. Always up for a game.</p>
         </div>
         <div class="life-gallery">
-          <div class="life-img"><img src="images/profile.jpg" alt="Ping Pong" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Ping Pong" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Ping Pong" class="photo-fit"></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 1</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 2</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 3</div></div>
         </div>
       </div>
 
       <div class="life-block reveal">
         <div class="life-header">
           <h3>Hiking</h3>
-          <p>Outdoor trekking trips enjoying nature, hills, and mountain views around Cambodia.</p>
+          <p>Exploring trails and mountains when the chance comes up. Love the combination of physical challenge and natural scenery. A good hike resets everything.</p>
         </div>
         <div class="life-gallery">
-          <div class="life-img"><img src="images/profile.jpg" alt="Hiking" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Hiking" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Hiking" class="photo-fit"></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 1</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 2</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 3</div></div>
         </div>
       </div>
 
       <div class="life-block reveal">
         <div class="life-header">
           <h3>Gym</h3>
-          <p>Strength training and fitness routines to keep physically active and energetic daily.</p>
+          <p>Consistent training to stay strong and disciplined. The gym is where I build the same habits that make me a better developer: showing up consistently, tracking progress, and pushing past resistance.</p>
         </div>
         <div class="life-gallery">
-          <div class="life-img"><img src="images/profile.jpg" alt="Gym" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Gym" class="photo-fit"></div>
-          <div class="life-img"><img src="images/profile.jpg" alt="Gym" class="photo-fit"></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 1</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 2</div></div>
+          <div class="life-img"><div class="life-img-placeholder"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photo 3</div></div>
         </div>
       </div>
 
     </section>
 
-    <!-- ==================== CONTACT SECTION ==================== -->
+    <!-- CONTACT -->
     <div class="contact-section reveal" id="contact">
       <h2 class="contact-h">Let's build something<br><span class="it-w">together.</span></h2>
-      <p class="contact-sub">Open for backend development, internships, and technical collaboration.</p>
+      <p class="contact-sub">Open for backend development internships and technical collaboration. Summer 2026.</p>
       <div class="contact-row">
         <a href="tel:+85569296505" class="contact-item">
-          <div class="c-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div class="c-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg></div>
           <h4>Phone</h4>
           <p>069 29 65 05</p>
         </a>
@@ -309,15 +364,9 @@
           <h4>LinkedIn</h4>
           <p>Connect with Heng Sok</p>
         </a>
-        <a href="#" target="_blank" class="contact-item">
-          <div class="c-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
-          <h4>Telegram</h4>
-          <p>Message me</p>
-        </a>
       </div>
     </div>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer>Heng Sok &copy; 2026</footer>
   </div>
 
