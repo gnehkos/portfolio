@@ -132,7 +132,7 @@
 
     <!-- PROJECTS -->
     <section id="hci-projects">
-      <div class="s-head reveal"><h2>Projects</h2><span class="n">02</span></div>
+      <div class="s-head reveal"><h2>About This Project</h2><span class="n">02</span></div>
 
       <div class="proj-hci reveal">
         <div class="proj-hci-header">
@@ -141,7 +141,7 @@
             <span class="proj-hci-tag tag-role">UX Researcher / UI Designer</span>
           </div>
           <h3 class="proj-hci-title">About LanKrong</h3>
-          <p class="proj-hci-sub">A mobile application solving public transit friction for daily bus commuters in Phnom Penh. Real-time tracking, route planning, and digital ticketing in one place.</p>
+          <p class="proj-hci-sub">LanKrong is a public bus navigation app designed for commuters in Phnom Penh, Cambodia. Built as a final project for MIS 380 Human-Computer Interaction at Paragon International University, the app guides users step-by-step from finding the nearest bus station to reaching their destination, no route memorization required.</p>
         </div>
 
         <div class="proj-hci-body">
@@ -151,30 +151,43 @@
           </div>
 
           <h4 class="proj-hci-h4">The Problem</h4>
-          <p class="proj-hci-desc">Bus riders in Phnom Penh have no reliable way to check routes, arrival times, or purchase tickets digitally. Most commuters rely on word of mouth or guesswork, leading to long wait times and missed buses. Our team set out to design a solution that removes this friction entirely.</p>
+          <p class="proj-hci-desc">Phnom Penh has a functioning city bus system, but most commuters avoid it. The existing City Bus app only shows live bus locations with no trip planning. Station panels are overwhelming and hard to read quickly. There is no tool that tells a user which bus to take, where to board, or where to get off. As a result, students and workers default to tuk-tuks even when the bus would be cheaper and faster.</p>
 
           <h4 class="proj-hci-h4">User Pain Points</h4>
           <div class="pain-point-list">
             <div class="pain-point">
               <span class="pain-point-num">01</span>
-              <p><strong>No route visibility.</strong> Commuters had no way to see live bus locations or estimated arrival times, leading to long unpredictable waits.</p>
+              <p><strong>Limited Route Knowledge.</strong> Users only know 2 to 3 memorized routes and avoid exploring unfamiliar ones.</p>
             </div>
             <div class="pain-point">
               <span class="pain-point-num">02</span>
-              <p><strong>Cash-only ticketing.</strong> Riders often lacked exact change, causing delays at boarding and friction with drivers.</p>
+              <p><strong>No Guidance, Just Data.</strong> The existing City Bus app provides locations but no guidance on what to do with that information.</p>
             </div>
             <div class="pain-point">
               <span class="pain-point-num">03</span>
-              <p><strong>Confusing route names.</strong> Route numbers and directions were unclear to first-time or occasional riders, especially tourists and students.</p>
+              <p><strong>Confusing Station Panels</strong> Station panels are too confusing for new or occasional riders.</p>
             </div>
             <div class="pain-point">
               <span class="pain-point-num">04</span>
-              <p><strong>No accessibility considerations.</strong> The existing system had no accommodations for elderly or visually impaired commuters.</p>
+              <p><strong>Fear of Boarding Wrong.</strong> Fear of boarding the wrong bus discourages people from trying.</p>
+            </div>
+            <div class="pain-point">
+              <span class="pain-point-num">05</span>
+              <p><strong>Defaulting to Tuk-Tuks.</strong> When uncertain, users switch to tuk-tuks instead of figuring the bus out.</p>
             </div>
           </div>
 
           <h4 class="proj-hci-h4">Design Process</h4>
-          <p class="proj-hci-desc">We conducted field research and interviews with daily commuters to understand real pain points before sketching a single screen. From there we built low-fidelity paper wireframes, tested early concepts with users, then translated validated flows into a high-fidelity interactive Figma prototype with a full design system.</p>
+          <ul class="process-list">
+            <li>Conducted user research through surveys and interviews to understand why commuters avoid public buses.</li>
+            <li><strong>Key insight:</strong> users don't need more data, they need to be told what to do.</li>
+            <li>Built initial wireframes focused on step-by-step trip guidance.</li>
+            <li>Ran usability testing with 2 real participants across 2 task scenarios.</li>
+            <li>Collected UX review feedback from the course lecturer.</li>
+            <li>Iterated on the full UI based on findings: redesigned the navbar, improved walking distance visibility, added sorting options, fixed subscription transparency, and added a location permission fallback.</li>
+            <li>Added <strong>Elder Mode</strong> in the final version with voice input, simplified UI, and full audio guidance for elderly users.</li>
+            <li>Added in-app wallet payment with QR code for paying bus fare directly in the app.</li>
+          </ul>
 
           <div class="proj-img-grid">
             <div class="proj-img-box" data-tilt>
@@ -199,13 +212,13 @@
           </div>
 
           <div style="display:flex;gap:10px;margin-bottom:24px">
-            <a href="#" target="_blank" class="hci-link-btn hci-link-primary hci-link-small">View Full Figma Prototype</a>
-            <a href="#" target="_blank" class="hci-link-btn hci-link-secondary hci-link-small">Design Documentation</a>
+            <a href="https://www.figma.com/proto/M7PWuujDWmrPYKmBRuJe3l/Official-Bus-App-Final?node-id=8051-1288" target="_blank" class="hci-link-btn hci-link-primary hci-link-small">View Full Figma Prototype</a>
+            <a href="https://www.canva.com/design/DAHRBZ5xpRo/l2X6SIDTZW6U62cYfmMo3Q/edit" target="_blank" class="hci-link-btn hci-link-secondary hci-link-small">Final Presentation Slides</a>
           </div>
 
           <h4 class="proj-hci-h4">Reflection</h4>
           <div class="reflection-block">
-            This project was my first time conducting real user interviews. I was surprised how different the actual user pain points were from what I initially assumed. The usability testing phase taught me that even small friction in a UI flow, like an unclear confirmation screen, causes users to hesitate or drop off entirely. Designing for accessibility also forced me to think beyond my own experience as a user.
+            LanKrong taught me that solving a real problem is harder than designing a beautiful interface. The biggest challenge was not the visual design but understanding why people actually avoid the bus and what would genuinely change their behavior. Usability testing was the most valuable part of the process, watching a real user pick the wrong bus because the walking distance was not visible enough changed how I think about visual hierarchy entirely. The government data dependency also remains an unsolved challenge. Making LanKrong truly live would require a formal data agreement with transport authorities while staying independent, which is something the team has not fully figured out yet. That tension between public utility and private startup is the most interesting and hardest problem left to solve.
           </div>
 
         </div>

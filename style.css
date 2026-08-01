@@ -346,3 +346,8 @@ footer{padding:60px 0 40px;text-align:center;font-family:var(--mono);font-size:0
   .week-body{grid-template-columns:1fr}
   .proj-img-grid{grid-template-columns:1fr}
 }
+
+.process-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:24px}
+.process-list li{font-size:0.9rem;color:var(--mid);line-height:1.75;padding-left:22px;position:relative}
+.process-list li::before{content:'';position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.process-list li strong{color:var(--navy)}
