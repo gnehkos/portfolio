@@ -110,3 +110,26 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (t) t.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+function toggleWeek(header) {
+  const block = header.parentElement;
+  block.classList.toggle('open');
+}
+
+document.querySelectorAll('.hci-pill').forEach(pill => {
+  pill.addEventListener('mousemove', e => {
+    const rect = pill.getBoundingClientRect();
+    pill.style.setProperty('--px', (e.clientX - rect.left) + 'px');
+    pill.style.setProperty('--py', (e.clientY - rect.top) + 'px');
+  });
+});
+
+document.querySelectorAll('.proj-hci, .team-card, .week-block, .goal-card, .other-proj-card, .proj-img-box, .proj-hci-figma').forEach(el => {
+  el.addEventListener('mouseenter', () => document.getElementById('ring').classList.add('h'));
+  el.addEventListener('mouseleave', () => document.getElementById('ring').classList.remove('h'));
+  el.addEventListener('mousemove', e => {
+    const rect = el.getBoundingClientRect();
+    el.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+    el.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+  });
+});
