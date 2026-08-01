@@ -133,3 +133,24 @@ document.querySelectorAll('.proj-hci, .team-card, .week-block, .goal-card, .othe
     el.style.setProperty('--my', (e.clientY - rect.top) + 'px');
   });
 });
+
+const darkSections = document.querySelectorAll('.contact-section, .mis-card, .goal-card, .other-proj-card, .proj-hci-header');
+
+function updateCursorTheme(e) {
+  let onDark = false;
+  darkSections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom) {
+      onDark = true;
+    }
+  });
+  if (onDark) {
+    c.classList.add('on-dark');
+    r.classList.add('on-dark');
+  } else {
+    c.classList.remove('on-dark');
+    r.classList.remove('on-dark');
+  }
+}
+
+document.addEventListener('mousemove', updateCursorTheme);
