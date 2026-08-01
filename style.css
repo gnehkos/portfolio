@@ -55,8 +55,8 @@ nav.hide{transform:translateY(-100%)}
 .hero-pre span{display:inline-block;transform:translateY(100%);animation:su 0.5s 0.3s forwards}
 @keyframes su{to{transform:translateY(0)}}
 
-.hero h1{font-family:var(--display);font-size:clamp(3rem,5.5vw,4.8rem);font-weight:700;line-height:1.05;letter-spacing:-1.5px;margin-bottom:24px;color:var(--navy)}
-.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;margin-right:0.15em}
+.hero h1{font-family:var(--display);font-size:clamp(3rem,5.5vw,4.8rem);font-weight:700;line-height:1.15;letter-spacing:-1.5px;margin-bottom:24px;color:var(--navy);padding-top:0.1em}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;margin-right:0.15em;padding-top:0.2em;margin-top:-0.2em}
 .hero h1 .w span{display:inline-block;transform:translateY(120%) rotate(4deg);animation:wordIn 0.8s cubic-bezier(0.16,1,0.3,1) forwards}
 @keyframes wordIn{to{transform:translateY(0) rotate(0)}}
 .hero h1 .w:nth-child(1) span{animation-delay:0.05s}
@@ -361,3 +361,5 @@ footer{padding:60px 0 40px;text-align:center;font-family:var(--mono);font-size:0
 .cur-r.on-dark{border-color:rgba(255,255,255,0.35)}
 .cur-r.on-dark.h{border-color:rgba(255,255,255,0.6);background:rgba(255,255,255,0.08)}
 .cur.on-dark{background:#fff}
+
+.it-color{color:var(--blue)}
