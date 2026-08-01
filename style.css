@@ -365,3 +365,14 @@ footer{padding:60px 0 40px;text-align:center;font-family:var(--mono);font-size:0
 .it-color{color:var(--blue)}
 
 .mis-grid{display:grid;grid-template-columns:1fr;gap:16px}
+
+.life-gallery{display:grid;gap:10px;margin-top:20px}
+.life-gallery.g1-h{grid-template-columns:1fr}
+.life-gallery.g1-h .life-img{aspect-ratio:16/9}
+.life-gallery.g1-v{grid-template-columns:1fr}
+.life-gallery.g1-v .life-img{aspect-ratio:3/4;max-width:420px}
+.life-gallery.g2{grid-template-columns:1fr 1fr}
+.life-gallery.g2 .life-img{aspect-ratio:3/4}
+.life-gallery.g3{grid-template-columns:repeat(3,1fr)}
+.life-gallery.g3 .life-img{aspect-ratio:3/4}
+.life-img{overflow:hidden}
