@@ -215,20 +215,80 @@ footer{padding:60px 0 40px;text-align:center;font-family:var(--mono);font-size:0
 
 /* RESPONSIVE */
 @media(max-width:768px){
-  body{cursor:auto}.cur,.cur-r,.orb,.orb2{display:none}
-  .wrap{padding:0 20px}.nav-inner{padding:0 20px}
+  body{cursor:auto}
+  .cur,.cur-r,.orb,.orb2{display:none}
+  .wrap{padding:0 20px}
+  .nav-inner{padding:0 20px}
   .nav-links{display:none}
+  .nav-badge{font-size:0.58rem;padding:5px 10px}
+
+  .hero{min-height:auto;padding-top:100px;padding-bottom:60px}
   .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero h1{font-size:2.4rem}
+  .hero-photo{max-width:280px;margin:0 auto}
+  .hero-btns{flex-direction:column}
+  .btn{width:100%;justify-content:center}
+  .scroll-cue{display:none}
+
+  .s-head{flex-direction:column;gap:4px;margin-bottom:32px}
+  .s-head h2{font-size:1.8rem}
+  .spacer{height:60px}
+
   .about-cols{grid-template-columns:1fr;gap:40px}
+  .goal-card{padding:24px}
+
   .edu-grid{grid-template-columns:1fr}
+
+  .hci-skill-pills{gap:6px}
+  .hci-pill{padding:7px 14px;font-size:0.72rem}
+
+  .mis-card{padding:24px;border-radius:20px}
+  .mis-title{font-size:1.6rem}
   .mis-grid{grid-template-columns:1fr}
+  .mis-links{flex-direction:column}
+  .mis-link-btn{width:100%;justify-content:center}
+
+  .proj{padding:20px;border-radius:18px}
   .proj-info{flex-direction:column;gap:20px}
   .proj-meta{min-width:auto}
-  .life-gallery{grid-template-columns:1fr 1fr}
-  .contact-section{padding:40px;border-radius:20px;margin-top:80px}
-  .contact-row{flex-direction:column;gap:20px}
-  .spacer{height:80px}
-  .s-head{flex-direction:column;gap:4px}
+  .proj-info h3{font-size:1.3rem}
+
+  .proj-hci-header{padding:24px}
+  .proj-hci-body{padding:24px}
+  .proj-hci-title{font-size:1.4rem}
+  .proj-img-grid{grid-template-columns:1fr}
+
+  .other-proj-card{padding:28px}
+  .other-proj-card h3{font-size:1.3rem}
+
+  .week-header{padding:16px 20px}
+  .week-header h4{font-size:0.92rem}
+  .week-body{padding:20px;grid-template-columns:1fr;gap:20px}
+  .week-date{display:none}
+
+  .team-grid{grid-template-columns:1fr}
+  .team-card{padding:24px}
+
+  .life-block{padding:24px;border-radius:18px}
+  .life-header h3{font-size:1.4rem}
+  .life-gallery.g3{grid-template-columns:1fr 1fr}
+  .life-gallery.g2{grid-template-columns:1fr}
+  .life-gallery.g1-v .life-img{max-width:100%}
+
+  .contact-section{padding:32px;border-radius:20px;margin-top:60px}
+  .contact-h{font-size:1.8rem}
+  .contact-row{flex-direction:column;gap:24px}
+
+  .biz-gallery{grid-template-columns:1fr 1fr}
+
+  footer{padding:40px 0 24px;font-size:0.65rem}
+}
+
+@media(max-width:480px){
+  .hero h1{font-size:2rem}
+  .life-gallery.g3{grid-template-columns:1fr}
+  .edu-card,.team-card,.proj{padding:20px}
+  .mis-title{font-size:1.4rem}
 }
 
 .lang-row{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line);transition:all 0.35s cubic-bezier(0.16,1,0.3,1)}
